@@ -1,0 +1,25 @@
+
+            1. The information below is about the website I want to create. Refer to the content below:
+            	1) title: "거래"
+            	2) 기능:
+            		- 지갑:잔액을 표시해주는 기능입니다.
+            		- 거래하기:현재 시세 가격으로 바로 구매할 수 있는 기능입니다.
+            		- 지정가 추가하기:지정가를 추가해주는 기능입니다
+            		- 회원가입과 로그인:서버에서 유저별로 거래 처리할 수 있는 기능입니다.
+            		- 기본 시세 기능:바이낸스와 바이비트의 평균 시세로 표시해주고 Ajax로 구현합니다. 그리고 패킷을 큐에 넣어서 싱글 쓰레드로 파이프라인 구조를 구성하고, 다중 멀티 쓰래드로 1-100유저, 100-200유저를 분화해줍니다.
+            		- 관리자 페이지:회원을 관리, 상세기능 보기, 회원간 거래 목록을 볼 수 있습니다. 데이터베이스에 삽입, 업데이트 할때마다 데이터베이스 큐에 넣어서 배치쿼리로 하고, 실제 데이토를 얻을때 유저 메모리 리스트를 만들어 그것으로 받아옵니다.
+            	3) 구조도(json):
+            		"{"file_architecture": {"folder": [{"name": "\uac70\ub798", "sub_file": [], "sub_folder": [{"name": "app", "sub_file": ["routes.py", "models.py", "controllers.py"], "sub_folder": [{"name": "static", "sub_file": [], "sub_folder": [{"name": "css", "sub_file": ["style.css", "main.css"], "sub_folder": []}, {"name": "js", "sub_file": ["script.js", "main.js"], "sub_folder": []}]}]}, {"name": "templates", "sub_file": ["index.html", "login.html", "register.html"], "sub_folder": []}]}]}, "project_name": "\uac70\ub798"}"
+
+            2. Follow the instructions below:
+            	1) Print only the content of format
+            	2) Follow the format example I provided absolutely
+            	3) Do not think creatively, act according to the requirements
+
+            3. Make it in the format below:
+            	1)Requirements:()
+            
+            4. Format Exgample:
+			
+            
+        

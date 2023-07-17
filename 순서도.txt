@@ -1,0 +1,9 @@
+어떤 프로젝트, 메뉴(주기능, 부기능), 설명 ->구조도(파일구조) -> 순서도 -> 구조도에 따른 html -> 각각의 html을 넣고 라우트 출력 && css 작성
+gpt_params = [
+        temperature=1,
+        max_tokens=3000,
+        top_p=1.0,
+        best_of=1,
+        frequency_penalty=1.0,
+        presence_penalty=0.0
+    ]

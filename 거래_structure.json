@@ -1,0 +1,71 @@
+{
+    "project_name": "거래",
+    "file_architecture": {
+        "folder": [
+            {
+                "name": "거래",
+                "sub_file": [],
+                "sub_folder": [
+                    {
+                        "name": "app",
+                        "sub_file": [
+                            "main.py",
+                            "models.py",
+                            "views.py",
+                            "utils.py"
+                        ],
+                        "sub_folder": []
+                    },
+                    {
+                        "name": "static",
+                        "sub_file": [],
+                        "sub_folder": [
+                            {
+                                "name": "css",
+                                "sub_file": [
+                                    "style.css"
+                                ],
+                                "sub_folder": []
+                            },
+                            {
+                                "name": "js",
+                                "sub_file": [
+                                    "script.js"
+                                ],
+                                "sub_folder": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "templates",
+                        "sub_file": [
+                            "index.html",
+                            "login.html",
+                            "signup.html"
+                        ],
+                        "sub_folder": []
+                    },
+                    {
+                        "name": "test",
+                        "sub_file": [],
+                        "sub_folder": [
+                            {
+                                "name": "test",
+                                "sub_file": [],
+                                "sub_folder": [
+                                    {
+                                        "name": "test",
+                                        "sub_file": [
+                                            "test.txt"
+                                        ],
+                                        "sub_folder": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
