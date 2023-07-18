@@ -25,7 +25,15 @@ def create_file_architecture():
         presence_penalty=0.0
     ) 
 
+    print("architecture==================")
+    print(msg)
+    print("architecture==================")
+
     answer = gpt.get_gpt_answer(gpt.model, gpt_params, msg)
+
+    print("architecture==================")
+    print(answer)
+    print("architecture==================")
 
     structure = parse_structure(answer)
     project_name = structure['name']

@@ -16,50 +16,47 @@ def create_file_flow_chart():
     # system_prompt, formatted_functions = System(system).get_architecture_prompt()
 
     architecture = jsonify({
-                "file_architecture": {
-                    "folder": [
+        "file_architecture": {
+            "folder": [
+            {
+                "name": "가계",
+                "sub_file": [
+                "config.py",
+                "run.py"
+                ],
+                "sub_folder": [
+                {
+                    "name": "app",
+                    "sub_file": [
+                    "main.py",
+                    "models.py",
+                    "views.py",
+                    "forms.py"
+                    ],
+                    "sub_folder": [
                     {
-                        "name": "거래소",
+                        "name": "static",
                         "sub_file": [],
                         "sub_folder": [
                         {
-                            "name": "app",
+                            "name": "css",
                             "sub_file": [
-                            "routes.py",
-                            "models.py",
-                            "controllers.py"
+                            "style.css"
                             ],
                             "sub_folder": [
                             {
-                                "name": "static",
-                                "sub_file": [],
-                                "sub_folder": [
-                                {
-                                    "name": "css",
-                                    "sub_file": [
-                                    "style.css",
-                                    "main.css"
-                                    ],
-                                    "sub_folder": []
-                                },
-                                {
-                                    "name": "js",
-                                    "sub_file": [
-                                    "script.js",
-                                    "main.js"
-                                    ],
-                                    "sub_folder": []
-                                }
-                                ]
+                                "name": "img",
+                                "sub_file": [
+                                "logo.png"
+                                ],
+                                "sub_folder": []
                             }
                             ]
                         },
                         {
-                            "name": "templates",
+                            "name": "js",
                             "sub_file": [
-                            "index.html",
-                            "login.html",
-                            "register.html"
+                            "script.js"
                             ],
                             "sub_folder": []
                         }
@@ -67,19 +64,34 @@ def create_file_flow_chart():
                     }
                     ]
                 },
-                "project_name": "거래"
-            })
+                {
+                    "name": "templates",
+                    "sub_file": [
+                    "base.html",
+                    "home.html",
+                    "login.html"
+                    ],
+                    "sub_folder": []
+                }
+                ]
+            }
+            ]
+        },
+        "project_name": "가계"
+        })
 
     system_prompt = System('hi').get_file_flow_chart(architecture)
     
     user = User.get_file_flow_chart()
     msg = gpt.create_message(system_prompt)
-
+    print("file_flow_chart===============")
+    print(msg)
+    print("file_flow_chart===============")
     gpt.put_query_message(msg, user)
 
     gpt_params = Params(
         temperature=0.8, 
-        max_tokens=3000, 
+        max_tokens=8000, 
         top_p=1.0, 
         best_of=1, 
         frequency_penalty=0.7, 
