@@ -7,3 +7,4 @@ api = Blueprint('api',  # 별칭, 해당 블루프린트 밑에서 정의된
 
 from controller import file_architecture
 from controller import file_flow_chart
+from controller import Combine_html_function
